@@ -1,0 +1,102 @@
+body {
+  -famfontily: "Playfair Display", serif;
+  font-family: "Oswald", sans-serif;
+
+  padding-top: 96px;
+}
+
+#header {
+  border: 1px, solid red;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 8px;
+}
+
+#header-img {
+  width: 100px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-left: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 4px;
+  background-color: black;
+}
+
+#email {
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+#submit {
+  border-radius: 4px;
+  cursor: poin;
+}
+
+.shoe-container {
+  border: 1px solid black;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shoe-img {
+  height: auto;
+  width: 90%;
+}
+
+.shoe-name {
+  background-color: lightgray;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.shoes-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 400px) {
+  .shoes-container {
+    flex-direction: column;
+  }
+
+  .shoe-container {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
